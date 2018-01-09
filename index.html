@@ -5,37 +5,61 @@
     <title>Benoît Fleury</title>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <style>
-      * { margin: 0; padding: 0; }
-      body { overflow: hidden; width: 100%; height: 100%; font: 15px/25px Georgia, "Times New Roman", serif; }
-      #sidebar { position: absolute; top: 0; left: 0; padding: 25px; }
-      #content { width: 450px; margin: 25px auto auto 150px; }
-      h1, h2 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 200; }
-      h2 { margin-top: 20px; font-size: 16px; }
-      ul { list-style-type: none; }
-      a { color: rgb(205, 0, 0); text-decoration: none; }
-      #contact li { display: inline-block; font-size: 25px; }
-      #contact li a { color: black; }
-      #links li { margin: 10px auto; }
-      #links li a { text-transform: uppercase; }
+      body { padding: 20px; display: flex; justify-content: center; background: white; font: 14px/18px Helvetica, Arial, sans-serif; color: #666; }
+      article { width: 800px; display: flex; }
+      header { flex: 1 150px; }
+      #content { flex: 1 650px; }
+      h1, h2, h3 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 200; }
+      h3 { margin-bottom: 2px; }
+      p { margin-top: 0; }
+      ul { padding: 0; list-style-type: none; }
+      li { margin: 0 0 5px 0; }
+      a { color: #666; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      img { border-radius: 50%; }
     </style>
   </head>
   <body>
-    <div id="sidebar">
-      <img src="images/face.png" alt="Portrait of Benoît Fleury" width="105">
-      <ul id="contact">
-        <li><a href="mailto:me@benfle.com" title="Email me!"><i class="icon-envelope"></i></a></li>
-        <li><a href="http://github.com/benfle" title="Not much yet!"><i class="icon-github"></i></a></li>
-        <li><a href="http://twitter.com/benfle" title="An interesting link every now and then!"><i class="icon-twitter"></i></a></li>
-        <li><a href="http://linkedin.com/in/benoitfleury" title=""><i class="icon-linkedin"></i></a></li>
-      </ul>
-    </div>
-    <div id="content">
-      <h1>Benoît Fleury</h1>
-      <h2><a href="http://benfle.com/resume">Résumé</a></h2>
-      <p>Head of engineering at <a href="http://access.watch">Access Watch</a>.</p>
-      <h2><a href="http://benfle.com/META-II">META II</a></h2>
-      <p>A JavaScript implementation of the META II metacompiler as described by Val Shorre in the original paper from 1964. META II contains 3 interesting ideas in computing: domain specific languages, virtual machines, and self-hosting evolution.</p>
-    </div>
+
+    <article>
+
+      <header>
+        <h1>Benoît Fleury</h1>
+        <img id="avatar" src="images/avatar.png" alt="Benoît Fleury's avatar" width="105"/>
+        <ul id="contact">
+          <li><i class="fa fa-map-marker"></i> St Paul, Minnesota</li>
+          <li><a href="mailto:me@benfle.com" title="Email address"><i class="icon-envelope"></i> me at benfle.com</a></li>
+          <li><a href="http://github.com/benfle" title="Github repositories"><i class="icon-github"></i> github.com/benfle</a></li>
+          <li><a href="http://twitter.com/benfle" title="Twitter account"><i class="icon-twitter"></i> @benfle</a></li>
+          <li><a href="http://linkedin.com/in/benoitfleury" title=""><i class="icon-linkedin"></i> benoitfleury</a></li>
+        </ul>
+      </header>
+
+      <div id="content">
+
+        <section>
+          <h2>Résumé</h2>
+          <p><a href="http://benfle.com/resume">As of January 2018, I am looking for new remote opportunities. I'm currently based in St Paul, Minnesota, but I will relocate to Tallahassee, Florida, in summer 2018.</a></p>
+        </section>
+
+        <section>
+          <h2>Open Source</h2>
+
+          <section>
+            <h3>Access Watch</h3>
+            <p><a href="https://github.com/access-watch/access-watch">Access Watch is a flexible access log processor that helps operators analyze the web traffic reaching their infrastructure.</a></p>
+          </section>
+
+          <section>
+            <h3>META II</h3>
+            <p><a href="https://github.com/benfle/META-II">A JavaScript implementation of the META II metacompiler as described by Val Shorre in the original paper from 1964. META II contains 3 interesting ideas in computing: domain specific languages, virtual machines, and self-hosting evolution.</a></p>
+          </section>
+        </section>
+
+      </div> <!-- #content -->
+
+    </article>
+
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
