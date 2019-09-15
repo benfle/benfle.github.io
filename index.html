@@ -10,22 +10,20 @@
         padding: 20px;
         display: flex;
         justify-content: center;
-        background-color: rgb(252, 252, 247);
+        background-color: #fff;
         color: #333;
-        font: 14px/20px Helvetica, Arial, sans-serif;        
+        font: 14px/20px Helvetica, sans-serif;
       }
       article { width: 800px; display: flex; }
       header { flex: 1 150px; }
       #content { flex: 1 650px; }
-      section { margin-bottom: 20px; }
-      section > section { margin-bottom: 10px; }
+      section { margin-bottom: 40px; }
+      section > section { margin-bottom: 20px; }
       h1 { font-weight: 200; margin: 10px 0 20px 0; }
-      h2 { color: #aaa; border-bottom: solid 1px #aaa; }
-      h2, h3 { font-weight: 200; margin: 10px 0 5px 0; }
+      h2 { font-weight: 200; color: #666; border-bottom: solid 1px #aaa; margin-bottom: 5px; }
+      h3 { font-weight: 200; margin-top: 10px; }
       ul { padding: 0; list-style-type: none; }
       li a { margin-left: 3px; }
-      a { color: #333; text-decoration: none; }
-      a:hover { text-decoration: underline; }
       img { border-radius: 50%; }
       p { margin-bottom: 10px; }
     </style>
@@ -60,63 +58,67 @@
       <div id="content">
 
         <section>
-          <h2>Résumé</h2>
-          <section>
-            <a href="http://benfle.com/resume">
-              <p>I have more than 10 years experience as a software designer. I have designed distributed systems as well as user interfaces. My most recent projects involved Clojure, Datomic, JavaScript, and Amazon Web Services (AWS).</p>
-              <p>My primary motivation as a software designer is to create products with the user in mind. Creating an environment that minimizes the breakdowns in the user's daily activities and enables the user to take full advantage of the computer's potential.</p>
-              <p>I have experience with the entire process of software development, from inception to production deployment and maintenance of the system. I can work independently or as part of a small team.</p>
-              <p>I am looking for new remote opportunities. I'm based in Tallahassee, Florida.</p>
-            </a>
+          <h2>Senior Software Engineer</h2>
+          <p>I have more than 10 years experience as a software engineer. I have designed data-intensive systems as well as user interfaces.</p>
+          <p>My primary motivation as a software engineer is to create products with the user in mind. Creating an environment that minimizes the breakdowns in the user's daily activities and enables the user to take full advantage of the computer's potential.</p>
+          <p>I have experience with the entire process of software development, from inception to production deployment and maintenance of the system. I can work independently or as part of a small team.</p>
+          <p>My most recent projects involved Clojure, Datomic, JavaScript, and Amazon Web Services (AWS).</p>
+          <p>I am looking for a remote opportunity with an organization that values its software and the people using it. I'm based in Tallahassee, Florida.</p>
+          <p><a href="http://benfle.com/resume">View complete resume.</a></p>
         </section>
 
         <section>
-          <h2>Open Source</h2>
+          <h2>Software Projects</h2>
+
           <section>
-            <a href="https://github.com/cognitect-labs/aws-api">
-              <h3>Cognitect Labs - AWS API</h3>
-              <p>aws-api is a Clojure library which provides programmatic access to AWS services from your Clojure program.</p>
-            </a>
+            <h3>Access Watch</h3>
+            <p><a href="https://github.com/access-watch/access-watch">Access Watch</a> is a flexible access log processor that helps operators analyze the web traffic reaching their infrastructure.</p>
           </section>
+
           <section>
-            <a href="https://github.com/access-watch/access-watch">
-              <h3>Access Watch</h3>
-              <p>Access Watch is a flexible access log processor that helps operators analyze the web traffic reaching their infrastructure.</p>
-            </a>
+            <h3>Cognitect Labs - AWS API</h3>
+            <p><a href="https://github.com/cognitect-labs/aws-api">aws-api</a> is a Clojure library which provides programmatic access to AWS services from your Clojure program.</p>
           </section>
+
+          <section>
+            <h3>META II</h3>
+            <p><a href="https://github.com/benfle/META-II">A JavaScript implementation of the META II metacompiler</a> as described by Val Shorre in the original paper from 1964. META II contains 3 interesting ideas in computing: domain specific languages, virtual machines, and self-hosting evolution.</p>
+          </section>
+
+          <section>
+            <h3>SICP</h3>
+            <p><a href="https://github.com/benfle/sicp">Some solutions in Clojure and Racket</a> for the exercises in the incredible work of synthesis that is Structure and Interpretation of Computer Programs.</p>
+          </section>
+
         </section>
 
         <section>
           <h2>Talks</h2>
+
           <section>
-            <a href="https://github.com/benfle/software-decomposition">
-              <h3>Software Decomposition</h3>
-              <p>I gave this talk to the Minnesota Clojure user group in 2015. I believe that software engineers ought to talk more about software decomposition. In this talk I compared several implementations of the KWIC system described in David Parnas's seminal paper "On The Criteria To Be Used in Decomposing Systems into Modules". I also relate the insights from this paper to the work of the architect Christopher Alexander in "Notes on the Synthesis of Form".</p>
-            </a>
+            <h3>Software Decomposition</h3>
+            <p><a href="https://github.com/benfle/software-decomposition">I gave this talk</a> to the Minnesota Clojure user group in 2015. I believe that software engineers ought to talk more about software decomposition. In this talk I compared several implementations of the KWIC system described in David Parnas's seminal paper "On The Criteria To Be Used in Decomposing Systems into Modules". I also relate the insights from this paper to the work of the architect Christopher Alexander in "Notes on the Synthesis of Form".</p>
           </section>
+
         </section>
 
         <section>
-          <h2>Learning</h2>
+          <h2>Interests</h2>
+
           <section>
-            <a href="https://github.com/benfle/META-II">
-              <h3>META II</h3>
-              <p>A JavaScript implementation of the META II metacompiler as described by Val Shorre in the original paper from 1964. META II contains 3 interesting ideas in computing: domain specific languages, virtual machines, and self-hosting evolution.</p>
-            </a>
+            <h3>Reading</h3>
+            <p>I started actively reading in 2008. I only read physical books that I own so I can mark them and add marginal notes. Most of my library is available on <a href="https://www.goodreads.com/user/show/1058765-benoit-fleury">Goodreads</a>.</p>
           </section>
+
           <section>
-            <a href="https://github.com/benfle/sicp">
-              <h3>SICP</h3>
-              <p>Some solutions in Clojure and Racket for the exercises in the incredible work of synthesis that is Structure and Interpretation of Computer Programs.</p>
-            </a>
+            <h3>Piano playing</h3>
+            <p>I started taking piano lessons in 2015 at the same time as my daughter. I always wanted to learn a musical instrument. And it allows me to better support my daughter in her learning.<p>
           </section>
+
           <section>
-            <a href="https://github.com/benfle/machine-learning">
-              <h3>Machine Learning</h3>
-              <p>I like to learn from first principles. I started to dive into machine learning with Tom Mitchell's book "Machine Learning."</p>
-            </a>
+            <h3>Oil Painting</h3>
+            <p>I started oil painting in 2018 thanks to Mark Carder's <a href="http://www.drawmixpaint.com/">Draw Mix Paint</a> method. I post <a href="painting.html">most of my paintings online</a>.</p>
           </section>
-        </section>
 
       </div> <!-- #content -->
 
@@ -130,5 +132,6 @@
       ga('create', 'UA-44073995-1', 'benfle.com');
       ga('send', 'pageview');
     </script>
+
   </body>
 </html>
