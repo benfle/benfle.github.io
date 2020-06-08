@@ -2,9 +2,9 @@
   --font-serif: 'Crimson Text', Palatino, Georgia, serif;
   --font-sans: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
   --background-color: #ffffff;
-  --text-size: 1.5rem;
+  --text-size: 1.2rem;
   --text-color: #111;
-  --line-height: 1.9rem;
+  --line-height: 1.5;
   --link-border: solid 1px #ccc;
   --link-border-hover: solid 1px #111;
 }
@@ -35,6 +35,8 @@ header ul {
 
 nav li {
   margin-right: 1rem;
+  font-family: var(--font-sans);
+  font-weight: 100;
 }
 
 .contact li {
@@ -62,11 +64,10 @@ header a:hover {
 /* Article */
 
 article {
-  border-bottom: solid 1px #ddd;
+
 }
 
 article .tweet-button {
-  margin-top: 1.4rem;
   float: right;
 }
 
@@ -118,7 +119,7 @@ article h1 {
   font-weight: 400;
   margin-top: 3rem;
   margin-bottom: 2rem;
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   line-height: 1;
 }
 
@@ -127,7 +128,7 @@ article h2 {
   font-weight: 400;
   margin-top: 3rem;
   margin-bottom: 1.4rem;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   line-height: 1;
 }
 
@@ -178,15 +179,26 @@ article blockquote footer {
   font-size: 1.1rem;
 }
 
+p.separator {
+  width: 100px;
+  margin: auto;
+  font-size: 1.5rem;
+  letter-spacing: .5rem;
+}
+
 /* Aside */
 
 aside {
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   font-weight: 200;
 }
 
 aside h2 {
-  font-weight: 200;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 1.4rem;
+  font-size: 1.5rem;
+  line-height: 1;
 }
 
 ul.index {
