@@ -1,0 +1,50 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  background-color: #fff;
+  color: #333;
+  margin: auto;
+  max-width: 1000px;
+}
+
+p {
+  font: 1.2em/1.5em 'mb-charter';
+}
+
+h1 {
+
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+}
+
+h1 {
+  text-transform: uppercase;
+  font: 1.5em/1.5em 'Gill Sans';
+}
+
+#header {
+  background-image: url("../img/banner.jpeg");
+}
+
+img#avatar {
+  width: 200px;
+  border-radius: 50%;
+  border: solid 5px #fff;
+}
+
+img#stripe-logo {
+  display: inline;
+  height: 2em;
+  vertical-align: middle;
+  margin-top: -0.25em;
+}
