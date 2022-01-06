@@ -61,11 +61,12 @@ a:hover {
 }
 
 #footer {
-  margin: 2em 0;
+  margin: 2em;
   padding: 1em 0;
   border-top: solid 1px #ccc;
   text-align: center;
   color: #aaa;
+  font-size: 0.8em;
 }
 
 #footer span {
