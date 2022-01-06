@@ -1,3 +1,3 @@
 # benfle.github.io
 
-Source for https://benfle.com.
+Source for http://benfle.com.
