@@ -17,52 +17,57 @@
       }
 
       body {
-        max-width: 700px;
-        margin: 0 auto;
+        margin: 0;
+        padding: 0;
         font-size: 1.2rem;
-        line-height: 1.5;
+        line-height: 1.4;
         color: var(--text-color);
         background-color: var(--bg-color);
       }
 
+      header, article {
+        max-width: 40rem;
+        margin: 0 auto;
+      }
+
       #banner {
         width: 100%;
-        max-height: 233px;
+        max-height: 13rem;
         background-image: url("img/banner.jpeg");
         background-size: cover;
       }
 
       img#avatar {
-        width: 150px;
+        width: 8rem;
         border-radius: 50%;
         border: solid 2px var(--bg-color);
-        margin: 140px auto auto 25px;
+        margin: 8rem auto 0 2rem;
       }
 
       h1 {
+        margin: 3.5rem 0 0 2rem;
         font-family: var(--title-font-family);
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: 700;
-        margin: 70px auto 20px 0;
         line-height: 1;
       }
 
-      h1 #subtitle {
+      #nickname {
+        display: block;
         font-size: 1.3rem;
         font-weight: normal;
         color: #ccc;
-        display: block;
       }
 
       h2 {
         font-family: var(--title-font-family);
-        font-weight: normal;
         font-size: 1.4rem;
-        margin: 2rem 0 0.5rem 0;
+        font-weight: normal;
+        margin: 0;
       }
 
       p {
-        margin: 0 0 1em 0;
+        margin: 0 0 0.6rem 0;
       }
 
       a {
@@ -78,22 +83,34 @@
         color: red !important;
       }
 
-      #activities {
-        margin-left: -11rem;
-      }
-
-      #activities td:first-child {
-        vertical-align: top;
-        text-align: right;
-        padding-right: 0.5rem;
-        min-width: 10rem;
+      .period {
         color: #999;
-        font-style: italic;
+        font-size: 1.1rem;
       }
 
-      .section {
-        border-bottom: solid 1px #ccc;
-        margin-bottom: 2rem;
+      .period:before {
+        content: "• ";
+      }
+
+      dl {
+        margin: 0;
+      }
+
+      dt {
+        margin-top: 1rem;
+        line-height: 1.2;
+      }
+
+      dd {
+        margin: 0;
+      }
+
+      section {
+        padding: 1rem;
+      }
+
+      section#humane-work {
+        border-top: solid 1px #ccc;
       }
     </style>
   </head>
@@ -105,72 +122,54 @@
       </div>
       <h1>
         Benoît Fleury
-        <span id="subtitle">@benfle</span>
+        <span id="nickname">@benfle</span>
       </h1>
     </header>
 
-    <div id="content">
+    <article>
 
-      <p>I am a <a href="https://benfle.com/resume" title="Benoit Fleury's Résumé">software engineer</a>, <a href="https://benfle.com/paintings" title="Benoit Fleury Paintings">amateur oil painter</a>, and <a href="https://www.goodreads.com/user/show/1058765-beno-t-fleury" title="Goodreads account.">avid reader</a>. I constantly strive to expand my knowledge and deepen my understanding in my field of expertise as well as the humanities.</p>
+      <section id="intro">
 
-      <p>I grew up in France and moved to the United States in 2008. I have dual citizenship since 2023. I currently live in Tallahassee, Florida, with my wife, <a href="https://annescollege.fsu.edu/faculty-staff/dr-veronica-fleury">Dr. Veronica Fleury</a>, and daughter, Penelope.</p>
+        <p>I am a <a href="https://benfle.com/resume" title="Benoit Fleury's Résumé">software engineer</a>, <a href="https://benfle.com/paintings" title="Benoit Fleury Paintings">amateur oil painter</a>, and <a href="https://www.goodreads.com/user/show/1058765-beno-t-fleury" title="Goodreads account.">avid reader</a>. I constantly strive to expand my knowledge and deepen my understanding in my field as well as the humanities.</p>
 
-      <p>You can contact me by email at <a href="mailto:me@benfle.com" title="Email">me@benfle.com</a> or find me on the web at <a href="https://bsky.app/profile/benfle.com" title="Bluesky">bluesky</a>, <a href="https://github.com/benfle">github</a>, or <a href="https://www.linkedin.com/in/benfle/">linkedin</a>.</p>
+        <p>I grew up in France and moved to the United States in 2008. I have dual citizenship since 2023. I currently live in Tallahassee, Florida, with my wife, <a href="https://annescollege.fsu.edu/faculty-staff/dr-veronica-fleury">Veronica</a>, and daughter, Penelope.</p>
 
-      <div class="section">
+        <p>I can be reached at <a href="mailto:me@benfle.com" title="Email">me@benfle.com</a> or on the web at <a href="https://bsky.app/profile/benfle.com" title="Bluesky">bluesky</a>, <a href="https://github.com/benfle">github</a>, or <a href="https://www.linkedin.com/in/benfle/">linkedin</a>.</p>
+
+      </section>
+
+      <section id="news">
 
 	      <h2>What am I doing these days?</h2>
 
-        <table id="activities">
-          <tbody>
-            <tr>
-              <td>June 2025</td>
-              <td>
-                <a class="callout" href="http://benfle.com/resume" title="Benoit Fleury's Résumé">I'm currently looking for work!</a>
-                <p>After a 6-month break, I am looking for new professional opportunities as an employee or consultant. If you think I may be a good fit for your project based on my <a href="https://benfle.com/resume">past experiences</a>, please contact <a href="mailto:me@benfle.com">me@benfle.com</a> or book a <a href="https://calendly.com/benoit-fleury/30min">30-minute call</a>.</p>
-              </td>
-            </tr>
-            <tr>
-              <td>June-August 2025</td>
-              <td>
-                <a href="https://graham.uchicago.edu/course/platos-gorgias-and-phaedrus/">Summer course: Plato's Gorgias and Phaedrus</a>
-                <p>I had the pleasure and privilege to study some of Plato's dialogues with Noah Chafets before so deciding to attend this summer course was a no-brainer.</p>
-              </td>
-            </tr>
-            <tr>
-              <td>March 2025 - now</td>
-              <td>
-                <a href="https://github.com/atproto-clj/atproto-clj">Open source: ATProto Clojure SDK</a>
-                <p>During my break, I worked on an ATProto SDK for Clojure(Script). The AT Protocol is an open, decentralized network for building social applications.</p>
-            <tr>
-              <td>2023-2027</td>
-              <td>
-                <a href="https://graham.uchicago.edu/program/basic-program-of-liberal-education/">Basic Program of Liberal Education at the University of Chicago</a>
-                <p>For 4 years, a group of 10 to 20 people discuss 3 hours every week about their reading and understanding of some of the great books.</p>
-              </td>
-            </tr>
-            <tr>
-              <td>2022-2025</td>
-              <td>
-                <a href="https://stripe.com">Backend/API Engineer at Stripe</a>
-                <p>Most of my work was focused on improving the interoperability of Stripe's Payments APIs internally and externally by shipping new services and user-facing APIs. I also reviewed dozens of other changes to Stripe's products as part of the company-wide API Review team.</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <dl id="activities">
+          <dt><a class="callout" href="http://benfle.com/resume" title="Benoit Fleury's Résumé">I'm currently looking for work!</a> <span class="period">June 2025</span></dt>
+          <dd><p>After a 6-month break, I am looking for new professional opportunities as an employee or consultant. If you think I may be a good fit for your project based on my <a href="https://benfle.com/resume">past experiences</a>, please contact <a href="mailto:me@benfle.com">me@benfle.com</a> or book a <a href="https://calendly.com/benoit-fleury/30min">30-minute call</a>.</p></dd>
 
-      </div> <!-- /.section -->
+          <dt><a href="https://graham.uchicago.edu/course/platos-gorgias-and-phaedrus/">Summer course: Plato's Gorgias and Phaedrus</a> <span class="period">June-August 2025</span></dt>
+          <dd><p>I already had the pleasure and privilege to study some of Plato's dialogues with Noah Chafets so deciding to attend this summer course was a no-brainer.</p></dd>
 
-      <div class="section">
+          <dt><a href="https://github.com/atproto-clj/atproto-clj">Open source: ATProto Clojure SDK</a> <span class="period">March 2025 - now</span></dt>
+          <dd><p>During my break, I worked on an ATProto SDK for Clojure(Script). The AT Protocol is an open, decentralized network for building social applications.</p></dd>
+
+          <dt><a href="https://graham.uchicago.edu/program/basic-program-of-liberal-education/">Basic Program of Liberal Education at the University of Chicago</a> <span class="period">2023-2027</span></dt>
+          <dd><p>For 4 years, a group of 10 to 20 people discuss 3 hours every week about their reading and understanding of some of the great books.</p></dd>
+
+          <dt><a href="https://stripe.com">Backend/API Engineer at Stripe</a> <span class="period">2022-2025</span></dt>
+          <dd><p>Most of my work was focused on improving the interoperability of our Payments APIs internally and externally by shipping new services and user-facing APIs. I also reviewed dozens of other changes to other Stripe products as part of the company-wide API Review team.</p></dd>
+        </dl>
+      </section>
+
+      <section id="humane-work">
         <figure>
           <blockquote>
             <p>Whatever work there is should have as much meaning as possible. Wherever possible, workmen should be artists; their work should be the application of knowledge or science and known and enjoyed by them as such. They should, if possible, know what they are doing, why what they are doing has the results it has, why they are doing it, and what constitutes the goodness of the things produced. They should understand what happens to what they produce, why it happens in that way, and how to improve what happens. They should understand their relations to others cooperating in a given process, the relation of that process to other processes, the pattern of them all as constituting the economy of the nation, and the bearing of the economy on the social, moral, and political life of the nation and the world. Work would be humanized if understanding of all these kinds were in it and around it.</p>
           </blockquote>
           <figcaption>—Robert M. Hutchins, <cite>The Great Conversation</cite></figcaption>
         </figure>
-      </div>
+      </section>
 
-    </div> <!-- /content -->
+    </article>
 
   </body>
 </html>
