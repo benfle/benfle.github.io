@@ -1,15 +1,106 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-US">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Benoît Fleury</title>
-    <meta name="description" content="Software Engineer and Amateur Artist">
-    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="Benoît Fleury"/>
+    <meta name="description" content="Benoît Fleury's personal website"/>
+    <style>
+
+      :root {
+        --title-font-family: Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+        --text-font-family: Garamond, serif;
+        --link-color: #33d;
+        --text-color: #000;
+        --bg-color: #fff;
+      }
+
+      body {
+        max-width: 700px;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+      }
+
+      #banner {
+        width: 100%;
+        max-height: 233px;
+        background-image: url("img/banner.jpeg");
+        background-size: cover;
+      }
+
+      img#avatar {
+        width: 150px;
+        border-radius: 50%;
+        border: solid 2px var(--bg-color);
+        margin: 140px auto auto 25px;
+      }
+
+      h1 {
+        font-family: var(--title-font-family);
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 70px auto 20px 0;
+        line-height: 1;
+      }
+
+      h1 #subtitle {
+        font-size: 1.3rem;
+        font-weight: normal;
+        color: #ccc;
+        display: block;
+      }
+
+      h2 {
+        font-family: var(--title-font-family);
+        font-weight: normal;
+        font-size: 1.4rem;
+        margin: 2rem 0 0.5rem 0;
+      }
+
+      p {
+        margin: 0 0 1em 0;
+      }
+
+      a {
+        color: var(--link-color);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .callout {
+        color: red !important;
+      }
+
+      #activities {
+        margin-left: -11rem;
+      }
+
+      #activities td:first-child {
+        vertical-align: top;
+        text-align: right;
+        padding-right: 0.5rem;
+        min-width: 10rem;
+        color: #999;
+        font-style: italic;
+      }
+
+      footer {
+        border-top: solid 1px #ccc;
+        margin-bottom: 2rem;
+      }
+
+    </style>
   </head>
   <body>
 
-    <div id="header">
+    <header>
       <div id="banner">
         <img id="avatar" src="img/avatar.png"/>
       </div>
@@ -17,58 +108,62 @@
         Benoît Fleury
         <span id="subtitle">@benfle</span>
       </h1>
-    </div>
+    </header>
 
     <div id="content">
 
-      <p>I am a <a href="http://benfle.com/resume" title="Benoit Fleury's Résumé">software engineer</a>, <a href="http://benfle.com/paintings" title="Benoit Fleury Paintings">amateur oil painter</a>, and <a href="https://www.goodreads.com/user/show/1058765-beno-t-fleury" title="Goodread account.">curious reader</a>.</p>
+      <p>I am a <a href="https://benfle.com/resume" title="Benoit Fleury's Résumé">software engineer</a>, <a href="https://benfle.com/paintings" title="Benoit Fleury Paintings">amateur oil painter</a>, and <a href="https://www.goodreads.com/user/show/1058765-beno-t-fleury" title="Goodreads account.">avid reader</a>. I constantly strive to expand my knowledge and deepen my understanding in my field of expertise as well as the humanities.</p>
 
-      <p>I grew up in France and moved to the United States in 02008. I have dual citizenship since 02023. I currently live in Tallahassee, Florida.</p>
+      <p>I grew up in France and moved to the United States in 2008. I have dual citizenship since 2023. I currently live in Tallahassee, Florida, with my wife, <a href="https://annescollege.fsu.edu/faculty-staff/dr-veronica-fleury">Dr. Veronica Fleury</a>, and daughter, Penelope.</p>
 
-      <p>You can contact me by email at <a href="mailto:me@benfle.com" title="Email">me@benfle.com</a> or find me on the web, usually as benfle: <a href="https://bsky.app/profile/benfle.com" title="Bluesky">bluesky</a>, <a href="https://github.com/benfle">github</a>, and <a href="https://www.linkedin.com/in/benfle/">linkedin</a>.</p>
+      <p>You can contact me by email at <a href="mailto:me@benfle.com" title="Email">me@benfle.com</a> or find me on the web at <a href="https://bsky.app/profile/benfle.com" title="Bluesky">bluesky</a>, <a href="https://github.com/benfle">github</a>, or <a href="https://www.linkedin.com/in/benfle/">linkedin</a>.</p>
 
       <div class="section">
 
-	      <h2>Projects</h2>
+	      <h2>What am I doing these days?</h2>
 
-        <h3>Basic Program of Liberal Education at the University of Chicago</h3>
-        <p>I started the <a href="https://graham.uchicago.edu/program/basic-program-of-liberal-education/">basic program</a> in 02023. For 4 years, a group of 10 to 20 people discuss 3 hours every week about their reading and understanding of some of the great books.</p>
-
-        <h3>Oil Painting</h3>
-        <p>In 02018, I picked up oil painting thanks to <a href="https://www.drawmixpaint.com/">Mark Carder's Draw Mix Paint method</a>. <a href="https://benfle.com/paintings/">I have been painting</a> ever since.</p>
-
-	      <h3>Cognitect Labs - AWS API</h3>
-	      <p>I led the early development of <a href="https://github.com/cognitect-labs/aws-api">cognitect-labs/aws-api</a>, a data-oriented Clojure library that provides programmatic access to Amazon Web Services.</p>
-
-	      <h3>Access Watch</h3>
-	      <p>A <a href="https://github.com/access-watch/access-watch">JavaScript log processing library</a> that provides a DSL to write custom log processing agents for inputs of any type.<p>
-
-        <h3>META II</h3>
-        <p>A <a href="https://github.com/benfle/META-II">JavaScript implementation of the META II metacompiler</a> as described by Val Shorre <a href="https://dl.acm.org/doi/10.1145/800257.808896">in the original paper from 01964</a>.</p>
-
-        <h3>SICP</h3>
-        <p><a href="https://github.com/benfle/sicp">Solutions in Racket and Clojure</a> to exercises in <a href="https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html">Structure and Interpretation of Computer Programs</a>. Reading SICP conscientiously and doing the exercises was a fun and rewarding experience that I recommend.</p>
-
-        <h3>Beginner guide to Clojure</h3>
-        <p>I co-authored a <a href="https://github.com/brian-dawn/surviving-clojure">beginner guide to Clojure</a> for <a href="https://clojurebridge.org/">ClojureBridge</a>, an organization aiming to increase diversity within the Clojure community by offering free, beginner-friendly Clojure programming workshops for underrepresented groups in tech.</p>
+        <table id="activities">
+          <tbody>
+            <tr>
+              <td>June 2025</td>
+              <td>
+                <a class="callout" href="http://benfle.com/resume" title="Benoit Fleury's Résumé">I'm currently looking for work!</a>
+                <p>After a 6-month break, I am looking for new professional opportunities as an employee or consultant. If you think I may be a good fit for your project based on my <a href="https://benfle.com/resume">past experiences</a>, please contact <a href="mailto:me@benfle.com">me@benfle.com</a> or book a <a href="https://calendly.com/benoit-fleury/30min">30-minute call</a>.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>June-August 2025</td>
+              <td>
+                <a href="https://graham.uchicago.edu/course/platos-gorgias-and-phaedrus/">Summer course: Plato's Gorgias and Phaedrus</a>
+                <p>I had the pleasure and privilege to study some of Plato's dialogues with Noah Chafets before so deciding to attend this summer course was a no-brainer.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>March 2025 - now</td>
+              <td>
+                <a href="https://github.com/atproto-clj/atproto-clj">Open source: ATProto Clojure SDK</a>
+                <p>During my break, I worked on an ATProto SDK for Clojure(Script). The AT Protocol is an open, decentralized network for building social applications.</p>
+            <tr>
+              <td>2023-2027</td>
+              <td>
+                <a href="https://graham.uchicago.edu/program/basic-program-of-liberal-education/">Basic Program of Liberal Education at the University of Chicago</a>
+                <p>For 4 years, a group of 10 to 20 people discuss 3 hours every week about their reading and understanding of some of the great books.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>2022-2025</td>
+              <td>
+                <a href="https://stripe.com">Backend/API Engineer at Stripe</a>
+                <p>Most of my work was focused on improving the interoperability of Stripe's Payments APIs internally and externally by shipping new services and user-facing APIs. I also reviewed dozens of other changes to Stripe's products as part of the company-wide API Review team.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
       </div>
 
-    </div>
+    </div> <!-- /content -->
 
-    <div id="quote">
-      <figure>
-        <blockquote>
-          <p>Whatever work there is should have as much meaning as possible. Wherever possible, workmen should be artists; their work should be the application of knowledge or science and known and enjoyed by them as such. They should, if possible, know what they are doing, why what they are doing has the results it has, why they are doing it, and what constitutes the goodness of the things produced. They should understand what happens to what they produce, why it happens in that way, and how to improve what happens. They should understand their relations to others cooperating in a given process, the relation of that process to other processes, the pattern of them all as constituting the economy of the nation, and the bearing of the economy on the social, moral, and political life of the nation and the world. Work would be humanized if understanding of all these kinds were in it and around it.</p>
-        </blockquote>
-        <figcaption>—Robert M. Hutchins, <cite>The Great Conversation</cite></figcaption>
-      </figure>
-    </div>
-
-    <div id="footer">
-      <span>&copy; 02012–02025 Benoît Fleury</span>
-      <span>Last updated: Jan. 02025</span>
-    </div>
-
+    <footer />
   </body>
 </html>
